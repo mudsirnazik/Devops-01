@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact • Diamonix Technologies</title>
+   <link rel="icon" type="image/x-icon" href="identity_profile_logo.png">
+
+
+  <meta name="description" content="Get in touch with Diamonix. Clients can request enterprise solutions, users can get product support. Quick response within 24 hours.">
+  <meta name="keywords" content="contact software house, get quote, software development inquiry, technical support, Pakistan software company contact">
+  <meta property="og:title" content="Contact Diamonix • Client & User Support">
+  <meta property="og:description" content="Two ways to reach us: for business partnerships or product support.">
+  <link rel="canonical" href="https://diamonixTech.com/contact">
+
+    <!-- Mobile Optimization -->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="format-detection" content="telephone=no">
+      
+      <!-- Favicon (create these files) -->
+      <link rel="icon" type="image/png" sizes="32x32" href="identity profile logo-2.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="identity profile logo-16.png">
+      <link rel="apple-touch-icon" href="apple-touch-icon.png">
+      
+      <!-- Theme Color (for browser) -->
+      <meta name="theme-color" content="#7b2eda"> <!-- Purple -->
+      
+      <!-- MS Tile -->
+      <meta name="msapplication-TileColor" content="#7b2eda">
+      
+      <!-- Author -->
+      <meta name="author" content="Diamonix Technologies">
+      
+      <!-- Rating (for general audience) -->
+      <meta name="rating" content="General">
+
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Google Fonts Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+      transition: background-color 0.3s ease, color 0.2s ease, border-color 0.2s ease;
+    }
+
+    /* ----- LIGHT MODE variables (default) ----- */
+    :root {
+      --bg-gradient: linear-gradient(145deg, #f9faff 0%, #f0f3fd 100%);
+      --surface: #ffffff;
+      --text-primary: #1e1e3f;
+      --text-secondary: #2d2d5c;
+      --primary-purple: #7b2eda;
+      --primary-green: #2ecc71;
+      --primary-blue: #3b7cff;
+      --accent-gradient: linear-gradient(135deg, #7b2eda, #3b7cff, #2ecc71);
+      --card-bg: rgba(255, 255, 255, 0.8);
+      --card-border: rgba(123, 46, 218, 0.15);
+      --header-bg: rgba(255, 255, 255, 0.7);
+      --shadow: 0 20px 40px -10px rgba(55, 30, 95, 0.15);
+      --glow: 0 8px 22px rgba(123, 46, 218, 0.2);
+      --footer-bg: #f2f0fa;
+      --footer-text: #1e1e3f;
+      --footer-link: #2d2d5c;
+      --toggle-icon: #f1c40f;
+    }
+
+    /* ----- DARK MODE override ----- */
+    body.dark-mode {
+      --bg-gradient: linear-gradient(145deg, #0b0b16 0%, #151523 100%);
+      --surface: #1f1f30;
+      --text-primary: #f0eaff;
+      --text-secondary: #cfc7f0;
+      --primary-purple: #c57bff;
+      --primary-green: #6de69c;
+      --primary-blue: #79a9ff;
+      --accent-gradient: linear-gradient(135deg, #c57bff, #79a9ff, #6de69c);
+      --card-bg: rgba(30, 28, 48, 0.8);
+      --card-border: rgba(197, 123, 255, 0.25);
+      --header-bg: rgba(15, 15, 28, 0.8);
+      --shadow: 0 25px 45px -10px #00000055;
+      --glow: 0 8px 25px #b87aff40;
+      --footer-bg: #12121c;
+      --footer-text: #cfc7f0;
+      --footer-link: #79a9ff;
+      --toggle-icon: #f7d44a;
+    }
+
+    body {
+      background: var(--bg-gradient);
+      color: var(--text-primary);
+      min-height: 100vh;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1300px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    /* ----- HEADER (same as homepage) ----- */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: var(--header-bg);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(123, 46, 218, 0.2);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 0;
+    }
+
+    .logo h1 {
+      font-size: 1.9rem;
+      font-weight: 700;
+      background: var(--accent-gradient);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      letter-spacing: -0.5px;
+    }
+    .logo span {
+      font-size: 0.9rem;
+      font-weight: 300;
+      display: block;
+      line-height: 1.2;
+      color: var(--text-secondary);
+      letter-spacing: 2px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.8rem;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .nav-links a {
+      text-decoration: none;
+      font-weight: 500;
+      color: var(--text-secondary);
+      position: relative;
+      padding: 0.4rem 0;
+      font-size: 0.95rem;
+    }
+    .nav-links a:hover {
+      color: var(--primary-purple);
+    }
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      width: 0%;
+      height: 2.5px;
+      bottom: 0;
+      left: 0;
+      background: var(--accent-gradient);
+      transition: width 0.2s ease;
+    }
+    .nav-links a:hover::after {
+      width: 100%;
+    }
+
+    #theme-toggle {
+      background: transparent;
+      border: none;
+      font-size: 1.7rem;
+      cursor: pointer;
+      color: var(--toggle-icon);
+      filter: drop-shadow(0 0 6px #b87aff70);
+      transition: transform 0.3s;
+      margin-left: 1rem;
+    }
+    #theme-toggle:hover {
+      transform: rotate(25deg) scale(1.1);
+    }
+
+    /* ----- PAGE HERO (contact intro) ----- */
+    .page-hero {
+      text-align: center;
+      padding: 4rem 0 2rem;
+    }
+    .page-hero h2 {
+      font-size: 3.5rem;
+      font-weight: 700;
+      background: var(--accent-gradient);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    .page-hero p {
+      font-size: 1.3rem;
+      color: var(--text-secondary);
+      max-width: 700px;
+      margin: 1rem auto 0;
+    }
+
+    /* ----- OPTION CARDS (Client / User) ----- */
+    .options-grid {
+      display: flex;
+      justify-content: center;
+      gap: 3rem;
+      margin: 3rem 0 4rem;
+      flex-wrap: wrap;
+    }
+
+    .option-card {
+      background: var(--card-bg);
+      backdrop-filter: blur(8px);
+      border: 1px solid var(--card-border);
+      border-radius: 3rem;
+      padding: 2.5rem 3rem;
+      box-shadow: var(--shadow);
+      transition: transform 0.25s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+      text-align: center;
+      min-width: 250px;
+      border-top: 5px solid transparent;
+    }
+    .option-card:nth-child(1) { border-top-color: var(--primary-purple); }
+    .option-card:nth-child(2) { border-top-color: var(--primary-green); }
+    .option-card:hover {
+      transform: translateY(-10px) scale(1.02);
+      box-shadow: 0 30px 45px -10px rgba(0,0,0,0.3), 0 0 0 1px var(--primary-purple) inset;
+    }
+    .option-icon {
+      font-size: 3.5rem;
+      margin-bottom: 1rem;
+      background: var(--accent-gradient);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    .option-card h3 {
+      font-size: 2rem;
+      font-weight: 600;
+      color: var(--text-primary);
+    }
+    .option-card p {
+      color: var(--text-secondary);
+      margin-top: 0.5rem;
+    }
+
+    /* ----- CLIENT FORM (hidden initially) ----- */
+    .client-form-container {
+      max-width: 800px;
+      margin: 0 auto 5rem;
+      display: none;
+      animation: slideUp 0.5s ease;
+    }
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .form-card {
+      background: var(--card-bg);
+      backdrop-filter: blur(10px);
+      border: 1px solid var(--card-border);
+      border-radius: 3rem;
+      padding: 3rem;
+      box-shadow: var(--shadow);
+    }
+
+    .form-title {
+      font-size: 2rem;
+      font-weight: 600;
+      margin-bottom: 2rem;
+      color: var(--text-primary);
+      border-left: 6px solid var(--primary-purple);
+      padding-left: 1.5rem;
+    }
+
+    .form-group {
+      margin-bottom: 1.8rem;
+    }
+    .form-group label {
+      display: block;
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+      color: var(--text-secondary);
+    }
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 1rem 1.5rem;
+      background: rgba(255,255,255,0.1);
+      border: 2px solid var(--card-border);
+      border-radius: 50px;
+      font-size: 1rem;
+      color: var(--text-primary);
+      outline: none;
+      transition: 0.2s;
+    }
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      border-color: var(--primary-purple);
+      box-shadow: 0 0 0 3px rgba(123,46,218,0.2);
+    }
+    .form-group textarea {
+      border-radius: 30px;
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+    }
+
+    .submit-btn {
+      background: var(--accent-gradient);
+      border: none;
+      padding: 1.2rem 2.5rem;
+      border-radius: 50px;
+      color: white;
+      font-weight: 600;
+      font-size: 1.2rem;
+      cursor: pointer;
+      box-shadow: 0 10px 20px -5px var(--primary-purple);
+      transition: transform 0.2s, box-shadow 0.3s;
+      width: 100%;
+      margin-top: 1rem;
+    }
+    .submit-btn:hover {
+      transform: translateY(-3px) scale(1.01);
+      box-shadow: 0 18px 30px -3px var(--primary-blue);
+    }
+
+    /* ----- USER POPUP MODAL ----- */
+    .modal-overlay {
+      position: fixed;
+      top: 0; left: 0; width: 100%; height: 100%;
+      background: rgba(0,0,0,0.6);
+      backdrop-filter: blur(5px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+      visibility: hidden;
+      opacity: 0;
+      transition: 0.3s;
+    }
+    .modal-overlay.active {
+      visibility: visible;
+      opacity: 1;
+    }
+    .modal-content {
+      background: var(--surface);
+      border-radius: 3rem;
+      padding: 3rem;
+      max-width: 500px;
+      width: 90%;
+      box-shadow: 0 40px 70px rgba(0,0,0,0.5);
+      border: 3px solid var(--primary-green);
+      position: relative;
+    }
+    .close-modal {
+      position: absolute;
+      top: 1.5rem; right: 2rem;
+      font-size: 2rem;
+      cursor: pointer;
+      color: var(--text-secondary);
+      transition: 0.2s;
+    }
+    .close-modal:hover {
+      color: var(--primary-purple);
+      transform: scale(1.2);
+    }
+
+    /* ----- FOOTER (same as homepage) ----- */
+    .site-footer {
+      background: var(--footer-bg);
+      color: var(--footer-text);
+      border-top: 3px solid var(--primary-purple);
+      padding: 4rem 0 2rem;
+      margin-top: 5rem;
+    }
+
+    .footer-container {
+      max-width: 1300px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr repeat(4, 1fr);
+      gap: 2rem;
+      margin-bottom: 3rem;
+    }
+
+    .footer-brand p {
+      margin: 1rem 0 1.5rem;
+      opacity: 0.9;
+      font-size: 0.95rem;
+      max-width: 280px;
+    }
+
+    .footer-brand .logo-small {
+      font-size: 1.8rem;
+      font-weight: 700;
+      background: var(--accent-gradient);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      display: inline-block;
+    }
+
+    .footer-col h4 {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+      color: var(--primary-green);
+      position: relative;
+      padding-bottom: 0.5rem;
+    }
+    .footer-col h4::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 40px;
+      height: 2px;
+      background: var(--primary-blue);
+    }
+
+    .footer-col ul {
+      list-style: none;
+    }
+    .footer-col ul li {
+      margin-bottom: 0.8rem;
+    }
+    .footer-col ul li a {
+      color: var(--footer-link);
+      text-decoration: none;
+      font-size: 0.95rem;
+      opacity: 0.85;
+      transition: 0.2s;
+      display: inline-block;
+    }
+    .footer-col ul li a:hover {
+      opacity: 1;
+      color: var(--primary-purple);
+      transform: translateX(5px);
+    }
+
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(123,46,218,0.3);
+      font-size: 0.9rem;
+    }
+
+    .footer-bottom .social-links a {
+      color: var(--footer-link);
+      font-size: 1.3rem;
+      margin-left: 1rem;
+      transition: 0.2s;
+    }
+    .footer-bottom .social-links a:hover {
+      color: var(--primary-purple);
+      transform: translateY(-3px);
+    }
+
+    /* responsive */
+    @media (max-width: 900px) {
+      .footer-grid { grid-template-columns: repeat(2, 1fr); }
+      .footer-brand { grid-column: span 2; }
+    }
+    @media (max-width: 750px) {
+      .navbar { flex-direction: column; gap: 0.5rem; }
+      .nav-links { justify-content: center; gap: 1rem; }
+      .page-hero h2 { font-size: 2.5rem; }
+      .form-row { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 500px) {
+      .footer-grid { grid-template-columns: 1fr; }
+      .footer-brand { grid-column: span 1; }
+      .footer-bottom { flex-direction: column; text-align: center; }
+      .footer-bottom .social-links a { margin: 0 0.5rem; }
+    }
+
+    /* dark mode adjustments */
+    .dark-mode .form-group input,
+    .dark-mode .form-group select,
+    .dark-mode .form-group textarea {
+      background: rgba(0,0,0,0.3);
+      color: var(--text-primary);
+    }
+    #theme-toggle i { transition: transform 0.4s ease; }
+    .dark-mode #theme-toggle i { transform: rotate(360deg); }
+  </style>
+</head>
+<body>
+<header>
+  <div class="container navbar">
+    <div class="logo">
+      <div class="logo-container" style="display: flex; align-items: center; gap: 12px;">
+        <img src="identity_profile_logo.png" alt="Diamonix Logo" style="width: 40px; height: 40px; object-fit: contain;">
+        <div class="logo-text">
+          <h1 style="margin: 0; font-size: 1.5rem; line-height: 1;">Diamonix Technologies</h1>
+          <span style="font-size: 0.7rem; letter-spacing: 1px; color: var(--text-secondary);">Dimensions Beyond Code</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="nav-links">
+      <a href="home.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="projects.html">Projects</a>
+      <a href="dimensions.html">Dimensions</a>
+      <a href="solutions.html">Solution</a>
+      <a href="beyonds.html">Beyonds</a>
+      <a href="Contact.html">Contact</a>
+      <button id="theme-toggle" aria-label="Toggle dark mode">
+        <i class="fas fa-sun" id="theme-icon"></i>
+      </button>
+    </div>
+
+
+  </div>
+</header>
+
+  <main class="container">
+    <!-- Page Hero -->
+    <section class="page-hero">
+      <h2>Get in Touch</h2>
+      <p>Choose the option that best describes you. Clients can request detailed consultations, while users can quickly reach out for support.</p>
+    </section>
+
+    <!-- Option Cards -->
+    <div class="options-grid">
+      <div class="option-card" id="client-option">
+        <div class="option-icon"><i class="fas fa-briefcase"></i></div>
+        <h3>I'm a Client</h3>
+        <p>Looking for a partnership, quote, or enterprise solution.</p>
+      </div>
+      <div class="option-card" id="user-option">
+        <div class="option-icon"><i class="fas fa-user"></i></div>
+        <h3>I'm a User</h3>
+        <p>Need support for one of our products or tools.</p>
+      </div>
+    </div>
+
+    <!-- Client Form (hidden initially) -->
+    <div class="client-form-container" id="client-form">
+      <div class="form-card">
+        <h3 class="form-title">Client Inquiry</h3>
+        <form id="clientForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label>Full Name *</label>
+              <input type="text" placeholder="John Doe" required>
+            </div>
+            <div class="form-group">
+              <label>Personal Email *</label>
+              <input type="email" placeholder="john@example.com" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Company Email *</label>
+              <input type="email" placeholder="john@company.com" required>
+            </div>
+            <div class="form-group">
+              <label>Contact Number *</label>
+              <input type="tel" placeholder="+1 234 567 890" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Position in Company *</label>
+              <input type="text" placeholder="CTO / Manager / etc." required>
+            </div>
+            <div class="form-group">
+              <label>Category of Interest *</label>
+              <select id="categorySelect" required>
+                <option value="">-- Select Category --</option>
+                <option value="programming">Programming & Development</option>
+                <option value="ai">AI & Data Science</option>
+                <option value="cloud">Cloud & DevOps</option>
+                <option value="blockchain">Blockchain & Crypto</option>
+                <option value="digital">Digital & Business</option>
+                <option value="products">Our Products (Beyonds)</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Specific Service *</label>
+            <select id="serviceSelect" required>
+              <option value="">-- First select a category --</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Special Details / Requirements</label>
+            <textarea placeholder="Tell us more about your project..."></textarea>
+          </div>
+          <button type="submit" class="submit-btn"><i class="fas fa-paper-plane"></i> Submit Inquiry</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- User Modal (Popup) -->
+    <div class="modal-overlay" id="userModal">
+      <div class="modal-content">
+        <span class="close-modal" id="closeModal">&times;</span>
+        <h3 style="font-size: 2rem; margin-bottom: 2rem; color: var(--primary-green);">User Support</h3>
+        <form id="userForm">
+          <div class="form-group">
+            <label>Your Name *</label>
+            <input type="text" placeholder="Jane Smith" required>
+          </div>
+          <div class="form-group">
+            <label>Email Address *</label>
+            <input type="email" placeholder="jane@example.com" required>
+          </div>
+          <div class="form-group">
+            <label>Email Password *</label>
+            <input type="password" placeholder="••••••••" required>
+          </div>
+          <div class="form-group">
+            <label>Your Position</label>
+            <input type="text" placeholder="Student / Developer / etc.">
+          </div>
+          <button type="submit" class="submit-btn"><i class="fas fa-headset"></i> Get Support</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Color band -->
+    <div style="display: flex; justify-content: center; gap: 1rem; margin: 4rem 0 2rem;">
+      <span style="width: 20px; height: 20px; background: #7b2eda; border-radius: 50%; box-shadow: 0 0 15px #7b2eda;"></span>
+      <span style="width: 20px; height: 20px; background: #2ecc71; border-radius: 50%; box-shadow: 0 0 15px #2ecc71;"></span>
+      <span style="width: 20px; height: 20px; background: #3b7cff; border-radius: 50%; box-shadow: 0 0 15px #3b7cff;"></span>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo-small">Diamonix</div>
+          <p>We remove complexity from software development with a 3D‑first platform that integrates effortlessly. Purple, green & blue innovation.</p>
+          <div style="display: flex; gap: 1rem; margin-top: 1rem;">
+            <span style="color: var(--primary-purple);"><i class="fas fa-cube"></i> 3D core</span>
+            <span style="color: var(--primary-green);"><i class="fas fa-brain"></i> AI ready</span>
+            <span style="color: var(--primary-blue);"><i class="fas fa-cloud"></i> cloud native</span>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul><li><a href="#">About Us</a></li><li><a href="#">Careers</a></li><li><a href="#">Blog</a></li><li><a href="#">Press</a></li></ul>
+        </div>
+        <div class="footer-col">
+          <h4>Support</h4>
+          <ul><li><a href="#">Help Center</a></li><li><a href="#">FAQ</a></li><li><a href="#">Contact Us</a></li><li><a href="#">Live Chat</a></li></ul>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul><li><a href="#">Privacy Policy</a></li><li><a href="#">Terms of Service</a></li><li><a href="#">Cookie Policy</a></li><li><a href="#">GDPR</a></li></ul>
+        </div>
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <ul><li><a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a></li><li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li><li><a href="#"><i class="fab fa-github"></i> GitHub</a></li><li><a href="#"><i class="fab fa-discord"></i> Discord</a></li></ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Diamonix Technologies. All rights reserved. | Made with <i class="fas fa-heart" style="color: #7b2eda;"></i> in Pakistan</p>
+        <div class="social-links">
+          <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+          <a href="#" aria-label="Reddit"><i class="fab fa-reddit"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+<script>
+(function() {
+  // ----- THEME TOGGLE (same rahega) -----
+  const toggleBtn = document.getElementById('theme-toggle');
+  const themeIcon = document.getElementById('theme-icon');
+  const body = document.body;
+  const savedTheme = localStorage.getItem('diamonixTheme');
+  if (savedTheme === 'dark') {
+    body.classList.add('dark-mode');
+    themeIcon.classList.remove('fa-sun');
+    themeIcon.classList.add('fa-moon');
+  } else {
+    body.classList.remove('dark-mode');
+    themeIcon.classList.remove('fa-moon');
+    themeIcon.classList.add('fa-sun');
+  }
+  toggleBtn.addEventListener('click', () => {
+    body.classList.toggle('dark-mode');
+    if (body.classList.contains('dark-mode')) {
+      themeIcon.classList.remove('fa-sun');
+      themeIcon.classList.add('fa-moon');
+      localStorage.setItem('diamonixTheme', 'dark');
+    } else {
+      themeIcon.classList.remove('fa-moon');
+      themeIcon.classList.add('fa-sun');
+      localStorage.setItem('diamonixTheme', 'light');
+    }
+  });
+
+  // ----- CLIENT / USER OPTIONS -----
+  const clientOption = document.getElementById('client-option');
+  const userOption = document.getElementById('user-option');
+  const clientForm = document.getElementById('client-form');
+  const userModal = document.getElementById('userModal');
+  const closeModal = document.getElementById('closeModal');
+
+  clientOption.addEventListener('click', () => {
+    clientForm.style.display = 'block';
+    userModal.classList.remove('active');
+    clientForm.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  });
+
+  userOption.addEventListener('click', () => {
+    userModal.classList.add('active');
+    clientForm.style.display = 'none';
+  });
+
+  closeModal.addEventListener('click', () => {
+    userModal.classList.remove('active');
+  });
+
+  window.addEventListener('click', (e) => {
+    if (e.target === userModal) {
+      userModal.classList.remove('active');
+    }
+  });
+
+  // ----- POPULATE SERVICES (Category ke hisaab se) -----
+  const categorySelect = document.getElementById('categorySelect');
+  const serviceSelect = document.getElementById('serviceSelect');
+
+  const servicesMap = {
+    programming: ['Web Development', 'Mobile App Development', 'Custom Software', 'API Integration', 'Legacy Modernization'],
+    ai: ['Machine Learning', 'Deep Learning', 'NLP', 'Computer Vision', 'Generative AI', 'Data Analytics'],
+    cloud: ['Cloud Migration', 'DevOps Automation', 'Kubernetes', 'Serverless', 'Infrastructure as Code'],
+    blockchain: ['Smart Contracts', 'Cryptocurrency Wallet', 'NFT Marketplace', 'DeFi Platform', 'Supply Chain Blockchain'],
+    digital: ['Digital Marketing', 'SEO', 'IT Consulting', 'Business Automation', 'CRM Implementation'],
+    products: ['Diamonix CRM', 'ASH Bot', 'Mobile AI', 'MediVoice AI', 'EduAnalytics', 'Vizion AI', 'EdgeMind', 'CodeFusion']
+  };
+
+  categorySelect.addEventListener('change', function() {
+    const category = this.value;
+    let options = '<option value="">-- Select Service --</option>';
+    if (category && servicesMap[category]) {
+      servicesMap[category].forEach(service => {
+        options += `<option value="${service}">${service}</option>`;
+      });
+    }
+    serviceSelect.innerHTML = options;
+  });
+
+  // ----- BACKEND URL (YAHAN APNA RENDER URL LAGAO) -----
+  const BACKEND_URL = 'http://127.0.0.1:8000';    
+  
+
+
+  
+
+  // ----- CLIENT FORM SUBMIT -----
+  document.getElementById('clientForm').addEventListener('submit', async (e) => {
+    e.preventDefault();
+    
+    // Form data collect karo
+    const formData = new FormData(e.target);
+    const data = Object.fromEntries(formData.entries());
+    
+    // Submit button disable karo taake double submit na ho
+    const submitBtn = e.target.querySelector('button[type="submit"]');
+    submitBtn.disabled = true;
+    submitBtn.innerHTML = 'Sending...';
+
+    try {
+      const response = await fetch(`${BACKEND_URL}/api/client-inquiry`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data)
+      });
+      const BACKEND_URL = 'http://127.0.0.1:8000';  // yeh sahi hai na?
+      const result = await response.json();
+      
+      if (response.ok) {
+        alert('✅ ' + (result.message || 'Inquiry submitted successfully!'));
+        e.target.reset();  // Form clear karo
+      } else {
+        alert('❌ Error: ' + (result.detail || 'Something went wrong'));
+      }
+    } catch (error) {
+      alert('❌ Cannot connect to server. Is backend running?');
+      console.error(error);
+    } finally {
+      // Submit button wapas enable karo
+      submitBtn.disabled = false;
+      submitBtn.innerHTML = '<i class="fas fa-paper-plane"></i> Submit Inquiry';
+    }
+  });
+
+  // ----- USER FORM SUBMIT (Modal) -----
+  document.getElementById('userForm').addEventListener('submit', async (e) => {
+    e.preventDefault();
+    
+    const formData = new FormData(e.target);
+    const data = Object.fromEntries(formData.entries());
+    
+    const submitBtn = e.target.querySelector('button[type="submit"]');
+    submitBtn.disabled = true;
+    submitBtn.innerHTML = 'Sending...';
+
+    try {
+      const response = await fetch(`${BACKEND_URL}/api/user-support`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data)
+      });
+      
+      const result = await response.json();
+      
+      if (response.ok) {
+        alert('✅ ' + (result.message || 'Support request sent!'));
+        e.target.reset();
+        userModal.classList.remove('active');  // Modal band karo
+      } else {
+        alert('❌ Error: ' + (result.detail || 'Something went wrong'));
+      }
+    } catch (error) {
+      alert('❌ Cannot connect to server.');
+      console.error(error);
+    } finally {
+      submitBtn.disabled = false;
+      submitBtn.innerHTML = '<i class="fas fa-headset"></i> Get Support';
+    }
+  });
+
+})();
+</script>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

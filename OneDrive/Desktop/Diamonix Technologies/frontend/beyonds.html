@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solutions • Diamonix Technologies</title>
+  <link rel="icon" type="image/x-icon" href="identity_profile_logo.png">
+
+  <meta name="description" content="Tailored solutions for 5 industries: FinTech (core banking), Healthcare (EMR/AI), Retail (demand forecasting), Supply Chain (blockchain), and B2B SaaS (growth marketing).">
+  <meta name="keywords" content="FinTech solutions, healthcare software, retail AI, supply chain blockchain, B2B SaaS marketing, industry specific software, enterprise solutions">
+  <meta property="og:title" content="Industry-Specific Solutions • Diamonix">
+  <meta property="og:description" content="FinTech, Healthcare, Retail, Supply Chain, B2B SaaS – custom solutions with 3D edge.">
+  <link rel="canonical" href="https://diamonixTech.com/solutions">
+
+  <!-- Mobile Optimization -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="identity profile logo-2.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="identity profile logo-16.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  
+  <!-- Theme Color -->
+  <meta name="theme-color" content="#7b2eda">
+  <meta name="msapplication-TileColor" content="#7b2eda">
+  <meta name="author" content="Diamonix Technologies">
+  <meta name="rating" content="General">
+
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Google Fonts Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+      transition: background-color 0.3s ease, color 0.2s ease, border-color 0.2s ease;
+    }
+
+    /* ----- LIGHT MODE variables (default) ----- */
+    :root {
+      --bg-gradient: linear-gradient(145deg, #f9faff 0%, #f0f3fd 100%);
+      --surface: #ffffff;
+      --text-primary: #1e1e3f;
+      --text-secondary: #2d2d5c;
+      --primary-purple: #7b2eda;
+      --primary-green: #2ecc71;
+      --primary-blue: #3b7cff;
+      --accent-gradient: linear-gradient(135deg, #7b2eda, #3b7cff, #2ecc71);
+      --card-bg: rgba(255, 255, 255, 0.8);
+      --card-border: rgba(123, 46, 218, 0.15);
+      --header-bg: rgba(255, 255, 255, 0.7);
+      --shadow: 0 20px 40px -10px rgba(55, 30, 95, 0.15);
+      --glow: 0 8px 22px rgba(123, 46, 218, 0.2);
+      --footer-bg: #f2f0fa;
+      --footer-text: #1e1e3f;
+      --footer-link: #2d2d5c;
+      --toggle-icon: #f1c40f;
+      --glass-bg: rgba(255, 255, 255, 0.2);
+      --glass-border: rgba(255, 255, 255, 0.3);
+    }
+
+    /* ----- DARK MODE override ----- */
+    body.dark-mode {
+      --bg-gradient: linear-gradient(145deg, #0b0b16 0%, #151523 100%);
+      --surface: #1f1f30;
+      --text-primary: #f0eaff;
+      --text-secondary: #cfc7f0;
+      --primary-purple: #c57bff;
+      --primary-green: #6de69c;
+      --primary-blue: #79a9ff;
+      --accent-gradient: linear-gradient(135deg, #c57bff, #79a9ff, #6de69c);
+      --card-bg: rgba(30, 28, 48, 0.8);
+      --card-border: rgba(197, 123, 255, 0.25);
+      --header-bg: rgba(15, 15, 28, 0.8);
+      --shadow: 0 25px 45px -10px #00000055;
+      --glow: 0 8px 25px #b87aff40;
+      --footer-bg: #12121c;
+      --footer-text: #cfc7f0;
+      --footer-link: #79a9ff;
+      --toggle-icon: #f7d44a;
+      --glass-bg: rgba(30, 30, 50, 0.4);
+      --glass-border: rgba(100, 200, 255, 0.3);
+    }
+
+    body {
+      background: var(--bg-gradient);
+      color: var(--text-primary);
+      min-height: 100vh;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1300px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    /* ----- HEADER ----- */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: var(--header-bg);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(123, 46, 218, 0.2);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 0;
+    }
+
+    .logo h1 {
+      font-size: 1.9rem;
+      font-weight: 700;
+      background: var(--accent-gradient);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      letter-spacing: -0.5px;
+    }
+    .logo span {
+      font-size: 0.9rem;
+      font-weight: 300;
+      display: block;
+      line-height: 1.2;
+      color: var(--text-secondary);
+      letter-spacing: 2px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.8rem;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .nav-links a {
+      text-decoration: none;
+      font-weight: 500;
+      color: var(--text-secondary);
+      position: relative;
+      padding: 0.4rem 0;
+      font-size: 0.95rem;
+    }
+    .nav-links a:hover {
+      color: var(--primary-purple);
+    }
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      width: 0%;
+      height: 2.5px;
+      bottom: 0;
+      left: 0;
+      background: var(--accent-gradient);
+      transition: width 0.2s ease;
+    }
+    .nav-links a:hover::after {
+      width: 100%;
+    }
+
+    #theme-toggle {
+      background: transparent;
+      border: none;
+      font-size: 1.7rem;
+      cursor: pointer;
+      color: var(--toggle-icon);
+      filter: drop-shadow(0 0 6px #b87aff70);
+      transition: transform 0.3s;
+      margin-left: 1rem;
+    }
+    #theme-toggle:hover {
+      transform: rotate(25deg) scale(1.1);
+    }
+
+    /* ----- PAGE HERO ----- */
+    .page-hero {
+      text-align: center;
+      padding: 4rem 0 2rem;
+    }
+    .page-hero h2 {
+      font-size: 3.5rem;
+      font-weight: 700;
+      background: var(--accent-gradient);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    .page-hero p {
+      font-size: 1.3rem;
+      color: var(--text-secondary);
+      max-width: 800px;
+      margin: 1rem auto 0;
+    }
+    .solution-tagline {
+      font-size: 1.1rem;
+      color: var(--primary-green);
+      margin-top: 0.5rem;
+      font-weight: 300;
+    }
+
+    /* ----- CATEGORY HEADINGS ----- */
+    .solution-category {
+      margin: 4rem 0 2rem;
+    }
+    .category-main-heading {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      position: relative;
+      display: inline-block;
+      margin-bottom: 1.5rem;
+    }
+    .category-main-heading span {
+      background: var(--accent-gradient);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    .category-main-heading::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -10px;
+      width: 100%;
+      height: 4px;
+      background: var(--accent-gradient);
+      border-radius: 4px;
+    }
+
+    /* ----- SOLUTIONS GRID ----- */
+    .solutions-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin: 2rem 0;
+      perspective: 1200px;
+    }
+
+    .solution-card {
+      background: var(--card-bg);
+      backdrop-filter: blur(8px);
+      border: 1px solid var(--card-border);
+      border-radius: 2rem;
+      padding: 2rem 1.5rem;
+      box-shadow: var(--shadow);
+      transition: transform 0.25s ease, box-shadow 0.3s ease;
+      transform-style: preserve-3d;
+      cursor: pointer; /* make it clear it's clickable */
+      border-top: 4px solid transparent;
+      display: flex;
+      flex-direction: column;
+    }
+    .solution-card:nth-child(3n+1) { border-top-color: var(--primary-purple); }
+    .solution-card:nth-child(3n+2) { border-top-color: var(--primary-green); }
+    .solution-card:nth-child(3n+3) { border-top-color: var(--primary-blue); }
+    
+    .solution-card:hover {
+      transform: rotateY(4deg) rotateX(3deg) translateZ(10px) scale(1.02);
+      box-shadow: 0 30px 45px -10px rgba(0,0,0,0.4), 0 0 0 1px var(--primary-purple) inset;
+    }
+
+    .solution-icon {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      background: var(--accent-gradient);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      filter: drop-shadow(0 5px 8px var(--primary-purple));
+    }
+
+    .solution-card h3 {
+      font-size: 1.6rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      color: var(--text-primary);
+    }
+
+    .industry-tag {
+      font-size: 0.8rem;
+      color: var(--primary-blue);
+      background: rgba(59, 124, 255, 0.1);
+      display: inline-block;
+      padding: 0.2rem 0.8rem;
+      border-radius: 20px;
+      margin-bottom: 1rem;
+      border: 1px solid var(--primary-blue);
+    }
+
+    .solution-definition {
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+      line-height: 1.6;
+      margin-top: 0.5rem;
+      flex-grow: 1;
+    }
+
+    .outcome-metric {
+      background: rgba(46, 204, 113, 0.1);
+      border-left: 4px solid var(--primary-green);
+      padding: 0.8rem;
+      margin: 1rem 0;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      color: var(--text-primary);
+    }
+
+    .tech-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 1.2rem;
+    }
+    .tech-tags span {
+      background: rgba(123, 46, 218, 0.1);
+      color: var(--primary-purple);
+      padding: 0.2rem 0.8rem;
+      border-radius: 20px;
+      font-size: 0.7rem;
+      font-weight: 500;
+      border: 1px solid var(--primary-purple);
+      cursor: pointer; /* make tags clickable */
+      transition: 0.2s;
+    }
+    .tech-tags span:hover {
+      background: var(--primary-purple);
+      color: white;
+      transform: scale(1.05);
+    }
+
+    /* ----- GLASS MORPHISM TAG MODAL ----- */
+    .tag-modal-overlay {
+      position: fixed;
+      top: 0; left: 0; width: 100%; height: 100%;
+      background: rgba(0,0,0,0.3);
+      backdrop-filter: blur(5px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 2100;
+      visibility: hidden;
+      opacity: 0;
+      transition: 0.2s;
+    }
+    .tag-modal-overlay.active {
+      visibility: visible;
+      opacity: 1;
+    }
+    .tag-detail-modal {
+      background: var(--glass-bg);
+      backdrop-filter: blur(16px);
+      border: 2px solid var(--glass-border);
+      border-radius: 2rem;
+      padding: 2rem;
+      max-width: 350px;
+      width: 90%;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.4), 0 0 30px var(--primary-blue);
+      color: var(--text-primary);
+      position: relative;
+      animation: tagFloat 5s infinite alternate;
+    }
+    @keyframes tagFloat {
+      0% { transform: translateY(0) rotateZ(0deg); }
+      100% { transform: translateY(-8px) rotateZ(1deg); }
+    }
+    .tag-detail-modal .close-tag {
+      position: absolute;
+      top: 0.8rem; right: 1.2rem;
+      font-size: 1.5rem;
+      cursor: pointer;
+      color: var(--text-secondary);
+      transition: 0.2s;
+    }
+    .tag-detail-modal .close-tag:hover {
+      color: var(--primary-purple);
+    }
+    .tag-detail-modal h4 {
+      font-size: 1.8rem;
+      margin-bottom: 0.8rem;
+      color: var(--primary-blue);
+    }
+    .tag-detail-modal p {
+      color: var(--text-secondary);
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    /* Trust Signals Section */
+    .trust-section {
+      background: var(--card-bg);
+      backdrop-filter: blur(8px);
+      border-radius: 3rem;
+      padding: 3rem;
+      margin: 4rem 0;
+      border: 1px solid var(--card-border);
+      text-align: center;
+    }
+    .trust-logos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 3rem;
+      margin: 2rem 0;
+      opacity: 0.7;
+    }
+    .trust-logos span {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: var(--text-secondary);
+    }
+    .testimonial-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    .testimonial {
+      font-style: italic;
+      color: var(--text-secondary);
+    }
+
+    /* Sticky CTA */
+    .sticky-cta {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      background: var(--accent-gradient);
+      color: white;
+      padding: 1rem 2rem;
+      border-radius: 50px;
+      box-shadow: 0 10px 30px var(--primary-purple);
+      z-index: 100;
+      border: none;
+      font-weight: 600;
+      cursor: pointer;
+      transition: transform 0.3s;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .sticky-cta:hover {
+      transform: scale(1.1);
+    }
+
+    /* ----- FOOTER ----- */
+    .site-footer {
+      background: var(--footer-bg);
+      color: var(--footer-text);
+      border-top: 3px solid var(--primary-purple);
+      padding: 4rem 0 2rem;
+      margin-top: 5rem;
+    }
+
+    .footer-container {
+      max-width: 1300px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr repeat(4, 1fr);
+      gap: 2rem;
+      margin-bottom: 3rem;
+    }
+
+    .footer-brand p {
+      margin: 1rem 0 1.5rem;
+      opacity: 0.9;
+      font-size: 0.95rem;
+      max-width: 280px;
+    }
+
+    .footer-brand .logo-small {
+      font-size: 1.8rem;
+      font-weight: 700;
+      background: var(--accent-gradient);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      display: inline-block;
+    }
+
+    .footer-col h4 {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+      color: var(--primary-green);
+      position: relative;
+      padding-bottom: 0.5rem;
+    }
+    .footer-col h4::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 40px;
+      height: 2px;
+      background: var(--primary-blue);
+    }
+
+    .footer-col ul {
+      list-style: none;
+    }
+    .footer-col ul li {
+      margin-bottom: 0.8rem;
+    }
+    .footer-col ul li a {
+      color: var(--footer-link);
+      text-decoration: none;
+      font-size: 0.95rem;
+      opacity: 0.85;
+      transition: 0.2s;
+      display: inline-block;
+    }
+    .footer-col ul li a:hover {
+      opacity: 1;
+      color: var(--primary-purple);
+      transform: translateX(5px);
+    }
+
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(123,46,218,0.3);
+      font-size: 0.9rem;
+    }
+
+    .footer-bottom .social-links a {
+      color: var(--footer-link);
+      font-size: 1.3rem;
+      margin-left: 1rem;
+      transition: 0.2s;
+    }
+    .footer-bottom .social-links a:hover {
+      color: var(--primary-purple);
+      transform: translateY(-3px);
+    }
+
+    /* responsive */
+    @media (max-width: 900px) {
+      .footer-grid { grid-template-columns: repeat(2, 1fr); }
+      .footer-brand { grid-column: span 2; }
+    }
+    @media (max-width: 750px) {
+      .navbar { flex-direction: column; gap: 0.5rem; }
+      .nav-links { justify-content: center; gap: 1rem; }
+      .page-hero h2 { font-size: 2.5rem; }
+    }
+    @media (max-width: 500px) {
+      .footer-grid { grid-template-columns: 1fr; }
+      .footer-brand { grid-column: span 1; }
+      .footer-bottom { flex-direction: column; text-align: center; }
+      .footer-bottom .social-links a { margin: 0 0.5rem; }
+    }
+
+    .dark-mode .solution-card:hover {
+      backdrop-filter: blur(12px);
+      background: rgba(45, 40, 70, 0.7);
+    }
+    #theme-toggle i { transition: transform 0.4s ease; }
+    .dark-mode #theme-toggle i { transform: rotate(360deg); }
+  </style>
+</head>
+<body>
+<header>
+  <div class="container navbar">
+    <div class="logo">
+      <div class="logo-container" style="display: flex; align-items: center; gap: 12px;">
+        <img src="identity_profile_logo.png" alt="Diamonix Logo" style="width: 40px; height: 40px; object-fit: contain;">
+        <div class="logo-text">
+          <h1 style="margin: 0; font-size: 1.5rem; line-height: 1;">Diamonix Technologies</h1>
+          <span style="font-size: 0.7rem; letter-spacing: 1px; color: var(--text-secondary);">Dimensions Beyond Code</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="nav-links">
+      <a href="home.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="projects.html">Projects</a>
+      <a href="dimensions.html">Dimensions</a>
+      <a href="solutions.html">Solution</a>
+      <a href="beyonds.html">Beyonds</a>
+      <a href="Contact.html">Contact</a>
+      <button id="theme-toggle" aria-label="Toggle dark mode">
+        <i class="fas fa-sun" id="theme-icon"></i>
+      </button>
+    </div>
+  </div>
+</header>
+
+  <!-- Sticky CTA -->
+  <button class="sticky-cta" onclick="window.location.href='contact.html'">
+    <i class="fas fa-rocket"></i> Solve My Challenge
+  </button>
+
+  <main class="container">
+    <!-- Page Hero -->
+    <section class="page-hero">
+      <h2>Industry Solutions</h2>
+      <p>We don't just build tech — we solve real business problems. Each solution is tailored to your industry's unique challenges, compliance needs, and workflows.</p>
+      <div class="solution-tagline">✦ 5 industries • 15 solutions • infinite possibilities ✦</div>
+    </section>
+
+    <!-- CATEGORY 1: Programming & Development Solutions -->
+    <div class="solution-category">
+      <h3 class="category-main-heading"><span>01. Programming & Development</span></h3>
+      <div class="solutions-grid">
+        <div class="solution-card" data-solution-id="core-banking">
+          <div class="solution-icon"><i class="fas fa-laptop-code"></i></div>
+          <span class="industry-tag">FinTech</span>
+          <h3>Core Banking Modernization</h3>
+          <div class="solution-definition">Legacy system migration to microservices with Java/Spring Boot. Enables real-time transactions and reduces TCO by 40%.</div>
+          <div class="outcome-metric"><i class="fas fa-chart-line"></i> 40% lower costs • 99.99% uptime</div>
+          <div class="tech-tags">
+            <span data-tag="Java">Java</span>
+            <span data-tag="Spring">Spring</span>
+            <span data-tag="Kafka">Kafka</span>
+            <span data-tag="Docker">Docker</span>
+          </div>
+        </div>
+        <div class="solution-card" data-solution-id="emr-integration">
+          <div class="solution-icon"><i class="fab fa-python"></i></div>
+          <span class="industry-tag">Healthcare</span>
+          <h3>EMR Integration Platform</h3>
+          <div class="solution-definition">Python-based FHIR/HL7 integration for Electronic Medical Records. Seamless data exchange between hospitals and labs.</div>
+          <div class="outcome-metric"><i class="fas fa-clock"></i> 60% faster patient data access</div>
+          <div class="tech-tags">
+            <span data-tag="Python">Python</span>
+            <span data-tag="FHIR">FHIR</span>
+            <span data-tag="FastAPI">FastAPI</span>
+            <span data-tag="PostgreSQL">PostgreSQL</span>
+          </div>
+        </div>
+        <div class="solution-card" data-solution-id="headless-commerce">
+          <div class="solution-icon"><i class="fas fa-cart-shopping"></i></div>
+          <span class="industry-tag">E‑Commerce</span>
+          <h3>Headless Commerce Platform</h3>
+          <div class="solution-definition">React/Node.js based storefront with GraphQL API. Omnichannel ready, 3x faster page loads.</div>
+          <div class="outcome-metric"><i class="fas fa-chart-simple"></i> 300% faster • 35% conversion boost</div>
+          <div class="tech-tags">
+            <span data-tag="React">React</span>
+            <span data-tag="Node.js">Node.js</span>
+            <span data-tag="GraphQL">GraphQL</span>
+            <span data-tag="MongoDB">MongoDB</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CATEGORY 2: AI & Data Science Solutions -->
+    <div class="solution-category">
+      <h3 class="category-main-heading"><span>02. AI & Data Science</span></h3>
+      <div class="solutions-grid">
+        <div class="solution-card" data-solution-id="demand-forecasting">
+          <div class="solution-icon"><i class="fas fa-robot"></i></div>
+          <span class="industry-tag">Retail</span>
+          <h3>AI Demand Forecasting</h3>
+          <div class="solution-definition">ML models that predict inventory needs with 95% accuracy, reducing overstock and stockouts.</div>
+          <div class="outcome-metric"><i class="fas fa-dollar-sign"></i> 25% inventory cost reduction</div>
+          <div class="tech-tags">
+            <span data-tag="TensorFlow">TensorFlow</span>
+            <span data-tag="Python">Python</span>
+            <span data-tag="BigQuery">BigQuery</span>
+          </div>
+        </div>
+        <div class="solution-card" data-solution-id="medical-imaging">
+          <div class="solution-icon"><i class="fas fa-file-medical"></i></div>
+          <span class="industry-tag">Healthcare</span>
+          <h3>Medical Imaging Diagnostics</h3>
+          <div class="solution-definition">Deep learning models for X‑ray/MRI analysis. Assists radiologists with 98% sensitivity.</div>
+          <div class="outcome-metric"><i class="fas fa-microscope"></i> 30% faster diagnosis</div>
+          <div class="tech-tags">
+            <span data-tag="PyTorch">PyTorch</span>
+            <span data-tag="OpenCV">OpenCV</span>
+            <span data-tag="MONAI">MONAI</span>
+          </div>
+        </div>
+        <div class="solution-card" data-solution-id="predictive-maintenance">
+          <div class="solution-icon"><i class="fas fa-chart-pie"></i></div>
+          <span class="industry-tag">Manufacturing</span>
+          <h3>Predictive Maintenance</h3>
+          <div class="solution-definition">IoT sensor data + AI to predict machine failure before it happens. Reduces unplanned downtime.</div>
+          <div class="outcome-metric"><i class="fas fa-wrench"></i> 50% downtime reduction</div>
+          <div class="tech-tags">
+            <span data-tag="IoT">IoT</span>
+            <span data-tag="Scikit-learn">Scikit‑learn</span>
+            <span data-tag="Kafka">Kafka</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CATEGORY 3: Cloud & DevOps Solutions -->
+    <div class="solution-category">
+      <h3 class="category-main-heading"><span>03. Cloud & DevOps</span></h3>
+      <div class="solutions-grid">
+        <div class="solution-card" data-solution-id="multi-cloud">
+          <div class="solution-icon"><i class="fas fa-cloud-arrow-up"></i></div>
+          <span class="industry-tag">Enterprise</span>
+          <h3>Multi‑Cloud Migration</h3>
+          <div class="solution-definition">Lift‑and‑shift or re‑architecture to AWS/Azure/GCP. Hybrid cloud ready with zero downtime.</div>
+          <div class="outcome-metric"><i class="fas fa-server"></i> 40% infrastructure cost savings</div>
+          <div class="tech-tags">
+            <span data-tag="Terraform">Terraform</span>
+            <span data-tag="AWS">AWS</span>
+            <span data-tag="Kubernetes">Kubernetes</span>
+          </div>
+        </div>
+        <div class="solution-card" data-solution-id="cicd-automation">
+          <div class="solution-icon"><i class="fas fa-code-branch"></i></div>
+          <span class="industry-tag">SaaS</span>
+          <h3>CI/CD Automation</h3>
+          <div class="solution-definition">End‑to‑end automated pipeline from commit to production. Blue/green deployments, canary releases.</div>
+          <div class="outcome-metric"><i class="fas fa-rocket"></i> 10x faster releases</div>
+          <div class="tech-tags">
+            <span data-tag="Jenkins">Jenkins</span>
+            <span data-tag="GitHub Actions">GitHub Actions</span>
+            <span data-tag="ArgoCD">ArgoCD</span>
+          </div>
+        </div>
+        <div class="solution-card" data-solution-id="devsecops">
+          <div class="solution-icon"><i class="fas fa-shield"></i></div>
+          <span class="industry-tag">Finance</span>
+          <h3>DevSecOps for Compliance</h3>
+          <div class="solution-definition">Security embedded in CI/CD pipeline. Automated compliance checks (SOC2, HIPAA).</div>
+          <div class="outcome-metric"><i class="fas fa-lock"></i> Audit‑ready infrastructure</div>
+          <div class="tech-tags">
+            <span data-tag="Vault">Vault</span>
+            <span data-tag="Aqua">Aqua</span>
+            <span data-tag="OpenPolicyAgent">OpenPolicyAgent</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CATEGORY 4: Blockchain & Crypto Solutions -->
+    <div class="solution-category">
+      <h3 class="category-main-heading"><span>04. Blockchain & Crypto</span></h3>
+      <div class="solutions-grid">
+        <div class="solution-card" data-solution-id="cross-border-payments">
+          <div class="solution-icon"><i class="fab fa-bitcoin"></i></div>
+          <span class="industry-tag">FinTech</span>
+          <h3>Cross‑Border Payments</h3>
+          <div class="solution-definition">Stablecoin‑based settlement layer for instant, low‑cost international transfers.</div>
+          <div class="outcome-metric"><i class="fas fa-bolt"></i> 3‑second finality • 90% lower fees</div>
+          <div class="tech-tags">
+            <span data-tag="Stellar">Stellar</span>
+            <span data-tag="Solidity">Solidity</span>
+            <span data-tag="USDC">USDC</span>
+          </div>
+        </div>
+        <div class="solution-card" data-solution-id="product-traceability">
+          <div class="solution-icon"><i class="fas fa-file-contract"></i></div>
+          <span class="industry-tag">Supply Chain</span>
+          <h3>Product Traceability</h3>
+          <div class="solution-definition">Blockchain‑based provenance tracking from raw material to consumer. Anti‑counterfeit.</div>
+          <div class="outcome-metric"><i class="fas fa-check-circle"></i> 100% transparent audit trail</div>
+          <div class="tech-tags">
+            <span data-tag="Hyperledger">Hyperledger</span>
+            <span data-tag="IPFS">IPFS</span>
+            <span data-tag="IoT">IoT</span>
+          </div>
+        </div>
+        <div class="solution-card" data-solution-id="nft-licensing">
+          <div class="solution-icon"><i class="fas fa-image"></i></div>
+          <span class="industry-tag">Art & Media</span>
+          <h3>NFT Licensing Platform</h3>
+          <div class="solution-definition">Mint, sell, and manage royalty splits for digital art. Smart contract‑enforced royalties.</div>
+          <div class="outcome-metric"><i class="fas fa-palette"></i> 15,000+ assets minted</div>
+          <div class="tech-tags">
+            <span data-tag="ERC-721">ERC‑721</span>
+            <span data-tag="IPFS">IPFS</span>
+            <span data-tag="Polygon">Polygon</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CATEGORY 5: Digital & Business Solutions -->
+    <div class="solution-category">
+      <h3 class="category-main-heading"><span>05. Digital & Business</span></h3>
+      <div class="solutions-grid">
+        <div class="solution-card" data-solution-id="growth-marketing">
+          <div class="solution-icon"><i class="fas fa-chart-line"></i></div>
+          <span class="industry-tag">B2B SaaS</span>
+          <h3>Growth Marketing Engine</h3>
+          <div class="solution-definition">Data‑driven SEO, PPC, and content strategy. Multi‑channel attribution.</div>
+          <div class="outcome-metric"><i class="fas fa-trend-up"></i> 150% lead increase in 6 months</div>
+          <div class="tech-tags">
+            <span data-tag="HubSpot">HubSpot</span>
+            <span data-tag="SEMrush">SEMrush</span>
+            <span data-tag="Google Analytics">Google Analytics</span>
+          </div>
+        </div>
+        <div class="solution-card" data-solution-id="digital-transformation">
+          <div class="solution-icon"><i class="fas fa-briefcase"></i></div>
+          <span class="industry-tag">Professional Services</span>
+          <h3>Digital Transformation Consulting</h3>
+          <div class="solution-definition">End‑to‑end roadmap for legacy modernization, change management, and cloud adoption.</div>
+          <div class="outcome-metric"><i class="fas fa-road"></i> 2‑year roadmap • 3x ROI</div>
+          <div class="tech-tags">
+            <span data-tag="TOGAF">TOGAF</span>
+            <span data-tag="Agile">Agile</span>
+            <span data-tag="Lean">Lean</span>
+          </div>
+        </div>
+        <div class="solution-card" data-solution-id="fleet-management">
+          <div class="solution-icon"><i class="fas fa-cogs"></i></div>
+          <span class="industry-tag">Logistics</span>
+          <h3>Automated Fleet Management</h3>
+          <div class="solution-definition">IoT + AI for route optimization, fuel tracking, and predictive maintenance.</div>
+          <div class="outcome-metric"><i class="fas fa-gas-pump"></i> 20% fuel savings</div>
+          <div class="tech-tags">
+            <span data-tag="IoT">IoT</span>
+            <span data-tag="Python">Python</span>
+            <span data-tag="Tableau">Tableau</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Trust Signals Section -->
+    <div class="trust-section" id="contact">
+      <h2 style="font-size: 2rem; margin-bottom: 1rem;">Trusted by industry leaders</h2>
+      <div class="trust-logos">
+        <span>🇺🇸 Stanford Health</span>
+        <span>🇸🇬 DBS Bank</span>
+        <span>🇩🇪 Siemens</span>
+        <span>🇦🇪 Emirates NBD</span>
+        <span>🇵🇰 Systems Ltd</span>
+      </div>
+      <div class="testimonial-grid">
+        <div class="testimonial">"Diamonix's AI solution reduced our diagnostic time by 40%." <br>— CTO, Apollo Hospitals</div>
+        <div class="testimonial">"Their blockchain traceability platform saved us $2M in counterfeit losses." <br>— Supply Chain Head, Lotte</div>
+      </div>
+      <div style="margin-top: 2rem;">
+        <button class="cta-btn" onclick="window.location.href='contact.html'" style="background: var(--accent-gradient); border: none; padding: 1rem 3rem; border-radius: 50px; color: white; font-weight: 600; cursor: pointer; box-shadow: 0 10px 20px var(--primary-purple);">Talk to a solutions expert</button>
+      </div>
+    </div>
+
+    <!-- Color band -->
+    <div style="display: flex; justify-content: center; gap: 1rem; margin: 2rem 0;">
+      <span style="width: 20px; height: 20px; background: #7b2eda; border-radius: 50%; box-shadow: 0 0 15px #7b2eda;"></span>
+      <span style="width: 20px; height: 20px; background: #2ecc71; border-radius: 50%; box-shadow: 0 0 15px #2ecc71;"></span>
+      <span style="width: 20px; height: 20px; background: #3b7cff; border-radius: 50%; box-shadow: 0 0 15px #3b7cff;"></span>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo-small">Diamonix</div>
+          <p>We remove complexity from software development with a 3D‑first platform that integrates effortlessly. Purple, green & blue innovation.</p>
+          <div style="display: flex; gap: 1rem; margin-top: 1rem;">
+            <span style="color: var(--primary-purple);"><i class="fas fa-cube"></i> 3D core</span>
+            <span style="color: var(--primary-green);"><i class="fas fa-brain"></i> AI ready</span>
+            <span style="color: var(--primary-blue);"><i class="fas fa-cloud"></i> cloud native</span>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul><li><a href="#">About Us</a></li><li><a href="#">Careers</a></li><li><a href="#">Blog</a></li><li><a href="#">Press</a></li></ul>
+        </div>
+        <div class="footer-col">
+          <h4>Support</h4>
+          <ul><li><a href="#">Help Center</a></li><li><a href="#">FAQ</a></li><li><a href="#">Contact Us</a></li><li><a href="#">Live Chat</a></li></ul>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul><li><a href="#">Privacy Policy</a></li><li><a href="#">Terms of Service</a></li><li><a href="#">Cookie Policy</a></li><li><a href="#">GDPR</a></li></ul>
+        </div>
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <ul><li><a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a></li><li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li><li><a href="#"><i class="fab fa-github"></i> GitHub</a></li><li><a href="#"><i class="fab fa-discord"></i> Discord</a></li></ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Diamonix Technologies. All rights reserved. | Made with <i class="fas fa-heart" style="color: #7b2eda;"></i> in Pakistan</p>
+        <div class="social-links">
+          <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+          <a href="#" aria-label="Reddit"><i class="fab fa-reddit"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Tag Detail Modal -->
+  <div class="tag-modal-overlay" id="tagModalOverlay">
+    <div class="tag-detail-modal">
+      <span class="close-tag" id="closeTagModal">&times;</span>
+      <h4 id="tagName">Tag</h4>
+      <p id="tagDescription">Description will appear here.</p>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script>
+    (function() {
+      // ---------- Tag descriptions (reused from dimensions, add new ones if needed) ----------
+      const tagDetails = {
+        'Java': 'Object-oriented, platform-independent language. Backbone of enterprise applications and Android development.',
+        'Spring': 'Powerful Java framework for building enterprise-grade applications. Provides dependency injection, MVC, and more.',
+        'Kafka': 'Distributed event streaming platform used for high-performance data pipelines and real-time analytics.',
+        'Docker': 'Containerization platform. Packages applications into containers for consistency across environments.',
+        'Python': 'High-level, interpreted language known for simplicity. Used in AI, data science, web development, and automation.',
+        'FHIR': 'Fast Healthcare Interoperability Resources – standard for exchanging healthcare information electronically.',
+        'FastAPI': 'Modern Python web framework for building APIs with automatic OpenAPI documentation.',
+        'PostgreSQL': 'Powerful, open-source object-relational database system with strong ACID compliance.',
+        'React': 'JavaScript library for building user interfaces. Component-based, virtual DOM, popular for SPAs.',
+        'Node.js': 'JavaScript runtime for server-side development. Event-driven, non-blocking I/O, ideal for APIs.',
+        'GraphQL': 'Query language for APIs that allows clients to request exactly the data they need.',
+        'MongoDB': 'NoSQL database using JSON-like documents. Scalable, flexible schema, great for modern applications.',
+        'TensorFlow': 'Open-source machine learning framework by Google. Used for deep learning, neural networks.',
+        'BigQuery': 'Google Cloud’s serverless, highly scalable data warehouse for analytics.',
+        'PyTorch': 'Open-source machine learning library based on Torch. Used for computer vision and NLP.',
+        'OpenCV': 'Open-source computer vision library with hundreds of algorithms for image and video analysis.',
+        'MONAI': 'PyTorch-based framework for deep learning in medical imaging.',
+        'IoT': 'Internet of Things – network of connected devices that collect and exchange data.',
+        'Scikit-learn': 'Machine learning library for Python. Simple and efficient tools for data mining and analysis.',
+        'Terraform': 'Infrastructure as Code tool by HashiCorp. Allows building, changing, and versioning infrastructure safely.',
+        'AWS': 'Amazon Web Services – market leader in cloud. Offers compute, storage, databases, ML, and serverless.',
+        'Kubernetes': 'Container orchestration system. Automates deployment, scaling, and management of containerized applications.',
+        'Jenkins': 'Open-source automation server for building, testing, and deploying software.',
+        'GitHub Actions': 'CI/CD platform integrated with GitHub. Automate workflows directly from your repository.',
+        'ArgoCD': 'Declarative GitOps continuous delivery tool for Kubernetes.',
+        'Vault': 'Tool for securely accessing secrets. Provides encryption, leasing, and revocation.',
+        'Aqua': 'Cloud-native security platform for containers and serverless.',
+        'OpenPolicyAgent': 'Policy engine for unified, context-aware policy enforcement across the stack.',
+        'Stellar': 'Open-source network for payments and assets. Allows fast, low-cost cross-border transactions.',
+        'Solidity': 'Object-oriented programming language for writing smart contracts on Ethereum.',
+        'USDC': 'USD Coin – a stablecoin pegged to the US dollar, used for digital payments.',
+        'Hyperledger': 'Open-source collaborative effort to advance cross-industry blockchain technologies.',
+        'IPFS': 'InterPlanetary File System – a peer‑to‑peer hypermedia protocol for decentralised storage.',
+        'ERC-721': 'Ethereum token standard for non-fungible tokens (NFTs).',
+        'Polygon': 'Layer-2 scaling solution for Ethereum. Enables fast and low-cost transactions.',
+        'HubSpot': 'CRM platform with marketing, sales, and service software.',
+        'SEMrush': 'Online visibility management and content marketing SaaS platform.',
+        'Google Analytics': 'Web analytics service that tracks and reports website traffic.',
+        'TOGAF': 'The Open Group Architecture Framework – a framework for enterprise architecture.',
+        'Agile': 'Project management methodology with iterative development and cross-functional teams.',
+        'Lean': 'Methodology focused on creating value with fewer resources and continuous improvement.',
+        'Tableau': 'Data visualization tool used for business intelligence and interactive dashboards.',
+        // Add any other tags that might appear...
+      };
+
+      // Get elements
+      const tagModalOverlay = document.getElementById('tagModalOverlay');
+      const closeTagModal = document.getElementById('closeTagModal');
+      const tagName = document.getElementById('tagName');
+      const tagDescription = document.getElementById('tagDescription');
+
+      // ----- Solution card click: redirect to contact page -----
+      document.querySelectorAll('.solution-card').forEach(card => {
+        card.addEventListener('click', function(e) {
+          // If the click originated from a tag span, don't redirect
+          if (e.target.closest('[data-tag]')) return;
+
+          const solutionId = this.dataset.solutionId;
+          if (solutionId) {
+            window.location.href = `contact.html?solution=${encodeURIComponent(solutionId)}`;
+          }
+        });
+      });
+
+      // ----- Tag click: show small modal -----
+      document.querySelectorAll('[data-tag]').forEach(span => {
+        span.addEventListener('click', function(e) {
+          e.stopPropagation();
+          const tag = this.dataset.tag;
+          const desc = tagDetails[tag] || 'A key technology used in modern solutions.';
+          tagName.textContent = tag;
+          tagDescription.textContent = desc;
+          tagModalOverlay.classList.add('active');
+        });
+      });
+
+      // Close tag modal
+      closeTagModal.addEventListener('click', () => {
+        tagModalOverlay.classList.remove('active');
+      });
+      window.addEventListener('click', (e) => {
+        if (e.target === tagModalOverlay) {
+          tagModalOverlay.classList.remove('active');
+        }
+      });
+    })();
+  </script>
+</body>
+</html>
